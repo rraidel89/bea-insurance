@@ -1,0 +1,1275 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bea Insurance by Univista | Seguros en Miami: Auto, Hogar, Vida y Salud</title>
+<meta name="description" content="Bea Insurance, agencia autorizada de Univista Insurance en Miami (1101 SW 27th Ave). Cotiza gratis tu seguro de auto, hogar, comercial, vida y salud con Beatriz Robaina. Te atendemos en español. Llama al (305) 501-5017.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "InsuranceAgency",
+  "name": "Bea Insurance by Univista Insurance",
+  "alternateName": "Univista Insurance - Beatriz Robaina",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "1101 SW 27th Ave",
+    "addressLocality": "Miami",
+    "addressRegion": "FL",
+    "postalCode": "33135",
+    "addressCountry": "US"
+  },
+  "telephone": "+1-305-501-5017",
+  "email": "brobaina@univistainsurance.com",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "116"
+  },
+  "openingHoursSpecification": [
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "18:00"},
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "10:00", "closes": "14:00"}
+  ],
+  "knowsLanguage": ["es", "en"],
+  "areaServed": "Miami, FL",
+  "founder": {"@type": "Person", "name": "Beatriz Robaina"}
+}
+</script>
+<style>
+:root{
+  --azul: #16357f;
+  --azul-oscuro: #0d2258;
+  --azul-tinta: #091a45;
+  --rojo: #e02127;
+  --rojo-suave: #fdeceb;
+  --crema: #faf6ef;
+  --crema-2: #f3ecdf;
+  --blanco: #ffffff;
+  --tinta: #1c2436;
+  --gris: #5b6577;
+  --linea: rgba(22,53,127,.12);
+  --sombra: 0 20px 50px -20px rgba(13,34,88,.25);
+  --radio: 22px;
+  --display: "Fraunces", serif;
+  --sans: "Instrument Sans", sans-serif;
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:var(--sans);
+  color:var(--tinta);
+  background:var(--crema);
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.contenedor{max-width:1180px;margin:0 auto;padding:0 24px}
+
+/* ===== Navegación ===== */
+header.nav{
+  position:sticky;top:0;z-index:50;
+  background:rgba(250,246,239,.92);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--linea);
+}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;padding-top:19px;padding-bottom:19px;gap:24px}
+.logo{display:flex;flex-direction:column;line-height:1.05}
+.logo .nombre{
+  font-family:var(--display);
+  font-weight:700;font-size:1.55rem;color:var(--azul);
+  letter-spacing:-.02em;
+}
+.logo .nombre em{font-style:italic;color:var(--rojo)}
+.logo .by{
+  font-size:.62rem;text-transform:uppercase;letter-spacing:.22em;
+  color:var(--gris);font-weight:600;margin-top:3px;
+}
+nav.enlaces{display:flex;gap:28px;font-weight:500;font-size:.94rem}
+nav.enlaces a{position:relative;padding:4px 0;color:var(--tinta)}
+nav.enlaces a::after{
+  content:"";position:absolute;left:0;bottom:0;width:100%;height:2px;
+  background:var(--rojo);transform:scaleX(0);transform-origin:left;
+  transition:transform 250ms var(--ease-out);
+}
+nav.enlaces a:hover::after{transform:scaleX(1)}
+.btn{
+  display:inline-flex;align-items:center;gap:9px;
+  font-weight:600;font-size:.95rem;
+  padding:13px 26px;border-radius:100px;
+  transition:transform 160ms var(--ease-out), box-shadow 200ms var(--ease-out), background 200ms ease, color 200ms ease;
+  cursor:pointer;border:none;font-family:var(--sans);
+}
+.btn:active{transform:scale(.97)}
+.btn-rojo{background:var(--rojo);color:#fff;box-shadow:0 10px 24px -10px rgba(224,33,39,.55)}
+.btn-azul{background:var(--azul);color:#fff}
+.btn-borde{border:1.5px solid var(--azul);color:var(--azul);background:transparent}
+.btn-blanco{background:#fff;color:var(--azul)}
+@media (hover:hover) and (pointer:fine){
+  .btn-rojo:hover{transform:translateY(-2px);box-shadow:0 16px 30px -10px rgba(224,33,39,.6)}
+  .btn-azul:hover{transform:translateY(-2px);background:var(--azul-oscuro)}
+  .btn-borde:hover{background:var(--azul);color:#fff}
+  .btn-blanco:hover{transform:translateY(-2px)}
+  .btn:hover:active{transform:scale(.97)}
+}
+
+/* ===== Hero ===== */
+.hero{position:relative;overflow:hidden;padding:72px 0 0}
+.hero::before{
+  content:"";position:absolute;top:-30%;right:-12%;
+  width:640px;height:640px;border-radius:50%;
+  background:radial-gradient(circle, rgba(22,53,127,.08), transparent 65%);
+}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+.hero-texto .etiqueta{
+  display:inline-flex;align-items:center;gap:8px;
+  background:var(--rojo-suave);color:var(--rojo);
+  font-size:.78rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;
+  padding:7px 16px;border-radius:100px;margin-bottom:24px;
+}
+.hero-texto h1{
+  font-family:var(--display);
+  font-size:clamp(2.5rem, 5vw, 3.9rem);
+  font-weight:600;line-height:1.08;letter-spacing:-.025em;
+  color:var(--azul-tinta);
+}
+.hero-texto h1 em{font-style:italic;color:var(--rojo)}
+.hero-texto p.sub{
+  margin:22px 0 34px;font-size:1.13rem;color:var(--gris);max-width:480px;
+}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.hero-chips{display:flex;gap:26px;margin-top:44px;flex-wrap:wrap}
+.chip{display:flex;align-items:center;gap:10px;font-size:.88rem;font-weight:600;color:var(--azul)}
+.chip .num{font-family:var(--display);font-size:1.5rem;font-weight:700;color:var(--azul-tinta)}
+.chip small{display:block;font-weight:500;color:var(--gris);font-size:.78rem;line-height:1.3}
+
+/* foto de Bea */
+.hero-foto{position:relative;align-self:end}
+.marco{
+  position:relative;border-radius:200px 200px 26px 26px;overflow:hidden;
+  box-shadow:var(--sombra);
+  background:linear-gradient(160deg, var(--azul) 0%, var(--azul-oscuro) 100%);
+  aspect-ratio:4/5;
+}
+.marco img{width:100%;height:100%;object-fit:cover}
+.marco .fallback{
+  position:absolute;inset:0;display:flex;flex-direction:column;
+  align-items:center;justify-content:center;gap:12px;color:#fff;text-align:center;padding:32px;
+}
+.marco .fallback .inicial{
+  font-family:var(--display);font-size:5rem;font-weight:700;font-style:italic;
+  color:#fff;opacity:.9;
+}
+.marco .fallback p{font-size:.85rem;color:#b9c6ec;max-width:230px}
+.tarjeta-flotante{
+  position:absolute;bottom:26px;left:-34px;
+  background:#fff;border-radius:16px;padding:14px 20px;
+  box-shadow:0 14px 34px -12px rgba(13,34,88,.3);
+  display:flex;align-items:center;gap:12px;
+}
+.tarjeta-flotante .estrellas{color:#f5a623;font-size:1rem;letter-spacing:2px}
+.tarjeta-flotante strong{font-size:1.05rem;color:var(--azul-tinta)}
+.tarjeta-flotante small{color:var(--gris);font-size:.75rem;display:block}
+.sello{
+  position:absolute;top:36px;right:-14px;
+  background:var(--rojo);color:#fff;border-radius:14px;
+  padding:12px 18px;font-weight:700;font-size:.85rem;line-height:1.25;
+  box-shadow:0 12px 26px -10px rgba(224,33,39,.5);
+  transform:rotate(3deg);
+}
+.sello span{font-family:var(--display);font-size:1.4rem;display:block}
+
+/* ===== Franja de confianza ===== */
+.franja{
+  margin-top:80px;background:var(--azul-tinta);color:#fff;padding:26px 0;
+}
+.franja .contenedor{
+  display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;
+}
+.franja .item{display:flex;align-items:center;gap:12px;font-size:.92rem;color:#c9d4f2}
+.franja .item strong{color:#fff}
+.franja svg{flex-shrink:0}
+
+/* ===== Secciones genéricas ===== */
+section{padding:96px 0}
+.encabezado-seccion{max-width:640px;margin-bottom:56px}
+.encabezado-seccion .kicker{
+  font-size:.78rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--rojo);margin-bottom:14px;display:flex;align-items:center;gap:10px;
+}
+.encabezado-seccion .kicker::before{content:"";width:26px;height:2px;background:var(--rojo)}
+.encabezado-seccion h2{
+  font-family:var(--display);font-size:clamp(1.9rem,3.4vw,2.7rem);
+  font-weight:600;letter-spacing:-.02em;color:var(--azul-tinta);line-height:1.15;
+}
+.encabezado-seccion h2 em{font-style:italic;color:var(--rojo)}
+.encabezado-seccion p{margin-top:16px;color:var(--gris);font-size:1.05rem}
+
+/* ===== Servicios ===== */
+#servicios{background:var(--crema)}
+.grid-servicios{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.servicio{
+  background:#fff;border:1px solid var(--linea);border-radius:var(--radio);
+  padding:34px 30px;position:relative;overflow:hidden;
+  transition:transform 250ms var(--ease-out), box-shadow 250ms var(--ease-out);
+}
+@media (hover:hover) and (pointer:fine){
+  .servicio:hover{transform:translateY(-6px);box-shadow:var(--sombra)}
+}
+.servicio .icono{
+  width:52px;height:52px;border-radius:14px;
+  background:var(--rojo-suave);color:var(--rojo);
+  display:flex;align-items:center;justify-content:center;margin-bottom:22px;
+}
+.servicio:nth-child(even) .icono{background:rgba(22,53,127,.08);color:var(--azul)}
+.servicio h3{font-family:var(--display);font-size:1.35rem;font-weight:600;color:var(--azul-tinta);margin-bottom:10px}
+.servicio p{color:var(--gris);font-size:.94rem;margin-bottom:18px}
+.servicio .mas{font-weight:600;font-size:.9rem;color:var(--rojo);display:inline-flex;align-items:center;gap:6px}
+.servicio .mas::after{content:"→";transition:transform .2s}
+.servicio:hover .mas::after{transform:translateX(4px)}
+.servicio.destacado{background:var(--azul);border-color:var(--azul)}
+.servicio.destacado h3,.servicio.destacado .mas{color:#fff}
+.servicio.destacado p{color:#b9c6ec}
+.servicio.destacado .icono{background:rgba(255,255,255,.14);color:#fff}
+
+/* ===== Cotizador ===== */
+#cotizar{background:var(--azul-tinta);position:relative;overflow:hidden}
+#cotizar::before{
+  content:"";position:absolute;bottom:-40%;left:-10%;
+  width:520px;height:520px;border-radius:50%;
+  background:radial-gradient(circle, rgba(224,33,39,.16), transparent 65%);
+}
+.cotizador-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;align-items:center;position:relative}
+.cotizador-texto h2{
+  font-family:var(--display);font-size:clamp(1.9rem,3.2vw,2.6rem);
+  color:#fff;font-weight:600;letter-spacing:-.02em;line-height:1.15;
+}
+.cotizador-texto h2 em{font-style:italic;color:#ff8a8d}
+.cotizador-texto p{color:#b9c6ec;margin-top:18px;font-size:1.03rem;max-width:400px}
+.pasos-lista{margin-top:30px;display:flex;flex-direction:column;gap:14px}
+.pasos-lista .paso-item{display:flex;gap:14px;align-items:center;color:#dbe3f7;font-size:.95rem}
+.paso-item .n{
+  width:30px;height:30px;border-radius:50%;flex-shrink:0;
+  background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.25);
+  display:flex;align-items:center;justify-content:center;
+  font-weight:700;font-size:.82rem;color:#fff;
+}
+.form-caja{
+  background:#fff;border-radius:26px;padding:40px;box-shadow:0 30px 70px -25px rgba(0,0,0,.45);
+}
+.progreso{display:flex;gap:8px;margin-bottom:28px}
+.progreso span{height:5px;flex:1;border-radius:10px;background:var(--crema-2);transition:background .3s}
+.progreso span.activo{background:var(--rojo)}
+.form-caja h3{font-family:var(--display);font-size:1.45rem;color:var(--azul-tinta);font-weight:600;margin-bottom:6px}
+.form-caja .ayuda{color:var(--gris);font-size:.9rem;margin-bottom:24px}
+.opciones-seguro{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.opcion{
+  border:1.5px solid var(--linea);border-radius:14px;padding:16px;
+  display:flex;align-items:center;gap:12px;cursor:pointer;
+  font-weight:600;font-size:.93rem;color:var(--tinta);
+  transition:border-color 200ms ease, background 200ms ease, color 200ms ease, transform 160ms var(--ease-out);
+  background:#fff;font-family:var(--sans);text-align:left;
+}
+.opcion:active{transform:scale(.98)}
+.opcion svg{flex-shrink:0}
+@media (hover:hover) and (pointer:fine){
+  .opcion:hover{border-color:var(--azul)}
+}
+.opcion.elegida{border-color:var(--rojo);background:var(--rojo-suave);color:var(--rojo)}
+.campo{margin-bottom:16px}
+.campo label{display:block;font-size:.85rem;font-weight:600;color:var(--azul-tinta);margin-bottom:7px}
+.campo input{
+  width:100%;padding:14px 16px;border:1.5px solid var(--linea);border-radius:12px;
+  font-family:var(--sans);font-size:1rem;color:var(--tinta);background:var(--crema);
+  transition:border-color .2s;
+}
+.campo input:focus{outline:none;border-color:var(--azul);background:#fff}
+.form-nav{display:flex;gap:12px;margin-top:26px}
+.form-nav .btn{flex:1;justify-content:center}
+.btn-atras{background:var(--crema-2);color:var(--tinta)}
+.paso{display:none;animation:aparecer 300ms var(--ease-out)}
+.paso.visible{display:block}
+@keyframes aparecer{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.exito{text-align:center;padding:20px 0}
+.exito .check{
+  width:70px;height:70px;border-radius:50%;background:var(--rojo-suave);
+  display:flex;align-items:center;justify-content:center;margin:0 auto 20px;
+}
+.exito h3{margin-bottom:10px}
+.exito p{color:var(--gris);font-size:.95rem}
+
+/* ===== Conoce a Bea ===== */
+.bea-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:64px;align-items:center}
+.bea-foto{
+  border-radius:26px;overflow:hidden;box-shadow:var(--sombra);
+  aspect-ratio:1/1;background:linear-gradient(160deg,var(--crema-2),#e8dfcc);
+  position:relative;
+}
+.bea-foto img{width:100%;height:100%;object-fit:cover}
+.bea-foto .fallback{
+  position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+  flex-direction:column;gap:10px;color:var(--gris);text-align:center;padding:30px;font-size:.85rem;
+}
+.cita{
+  font-family:var(--display);font-style:italic;font-size:1.35rem;
+  color:var(--azul);border-left:3px solid var(--rojo);
+  padding-left:22px;margin:26px 0;line-height:1.5;
+}
+.bea-texto p.bio{color:var(--gris);font-size:1.02rem;margin-bottom:14px}
+.firma{
+  font-family:var(--display);font-style:italic;font-size:1.6rem;color:var(--azul-tinta);margin-top:22px;
+}
+.firma small{display:block;font-family:var(--sans);font-style:normal;font-size:.8rem;color:var(--gris);letter-spacing:.1em;text-transform:uppercase;margin-top:4px}
+
+/* ===== Testimonios ===== */
+#testimonios{background:var(--crema-2)}
+.testimonios-head{
+  display:flex;justify-content:space-between;align-items:center;
+  gap:24px;flex-wrap:wrap;margin-bottom:34px;
+}
+.resumen-google{
+  display:flex;align-items:center;gap:14px;background:#fff;
+  border:1px solid var(--linea);border-radius:100px;padding:12px 22px;
+}
+.resumen-google .g-logo{width:26px;height:26px}
+.resumen-google strong{font-family:var(--display);font-size:1.3rem;color:var(--azul-tinta)}
+.resumen-google .estrellas{color:#f5a623;letter-spacing:2px;font-size:.95rem}
+.resumen-google small{color:var(--gris);font-size:.82rem}
+.slider-controles{display:flex;gap:10px}
+.flecha{
+  width:48px;height:48px;border-radius:50%;border:1.5px solid var(--linea);
+  background:#fff;color:var(--azul-tinta);cursor:pointer;
+  display:flex;align-items:center;justify-content:center;
+  transition:transform 160ms var(--ease-out), background 200ms ease, opacity 200ms ease;
+}
+.flecha:active{transform:scale(.94)}
+.flecha:disabled{opacity:.35;cursor:default}
+@media (hover:hover) and (pointer:fine){
+  .flecha:not(:disabled):hover{background:var(--azul-tinta);color:#fff;border-color:var(--azul-tinta)}
+}
+.slider{
+  display:flex;gap:18px;overflow-x:auto;
+  scroll-snap-type:x mandatory;
+  padding:4px 4px 16px;
+  scrollbar-width:none;-webkit-overflow-scrolling:touch;
+}
+.slider::-webkit-scrollbar{display:none}
+.testimonio{
+  flex:0 0 min(370px, 86%);scroll-snap-align:start;
+  background:#fff;border-radius:var(--radio);padding:30px;
+  display:flex;flex-direction:column;gap:15px;border:1px solid var(--linea);
+}
+.g-fila{display:flex;align-items:center;justify-content:space-between}
+.g-fila .g-logo{width:22px;height:22px;opacity:.95}
+.testimonio .estrellas{color:#f5a623;letter-spacing:3px}
+.testimonio p{color:var(--tinta);font-size:.94rem;flex:1;line-height:1.65}
+.testimonio .autor{display:flex;align-items:center;gap:12px}
+.autor .avatar{
+  width:42px;height:42px;border-radius:50%;background:var(--azul);color:#fff;flex-shrink:0;
+  display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.9rem;
+}
+.avatar.av-2{background:#7b1fa2}
+.avatar.av-3{background:#00796b}
+.avatar.av-4{background:#c62828}
+.avatar.av-5{background:#455a64}
+.avatar.av-6{background:#ef6c00}
+.autor strong{font-size:.92rem;color:var(--azul-tinta);display:block;line-height:1.2}
+.autor small{color:var(--gris);font-size:.78rem}
+.ver-google-wrap{text-align:center;margin-top:26px}
+.leer-mas{
+  background:none;border:none;color:var(--rojo);font-weight:600;font-size:.83rem;
+  cursor:pointer;padding:0;font-family:var(--sans);display:none;text-align:left;
+}
+
+/* ===== FAQ ===== */
+.faq-lista{max-width:760px}
+details{
+  background:#fff;border:1px solid var(--linea);border-radius:16px;
+  margin-bottom:12px;overflow:hidden;
+}
+summary{
+  cursor:pointer;padding:22px 26px;font-weight:600;color:var(--azul-tinta);
+  list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;
+  font-size:1rem;
+}
+summary::-webkit-details-marker{display:none}
+summary::after{
+  content:"+";font-family:var(--display);font-size:1.5rem;color:var(--rojo);
+  transition:transform 250ms var(--ease-in-out);flex-shrink:0;
+}
+details[open] summary::after{transform:rotate(45deg)}
+details .respuesta{padding:0 26px 22px;color:var(--gris);font-size:.95rem}
+
+/* ===== Contacto ===== */
+#contacto{background:var(--azul-tinta);color:#fff;padding:80px 0}
+.contacto-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:40px}
+.contacto-col h4{
+  font-family:var(--display);font-size:1.2rem;font-weight:600;margin-bottom:16px;color:#fff;
+}
+.contacto-col p, .contacto-col a{color:#b9c6ec;font-size:.95rem;line-height:1.9}
+.contacto-col a:hover{color:#fff}
+.mapa-placeholder{
+  margin-top:56px;border-radius:20px;background:rgba(255,255,255,.06);
+  border:1px dashed rgba(255,255,255,.25);
+  padding:48px;text-align:center;color:#8fa1d4;font-size:.9rem;
+}
+
+/* ===== Footer ===== */
+footer{background:#050f2b;color:#7386b8;padding:34px 0;font-size:.82rem}
+footer .contenedor{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
+footer .aviso{max-width:640px;line-height:1.6}
+
+/* ===== WhatsApp flotante ===== */
+.whatsapp-flotante{
+  position:fixed;bottom:26px;right:26px;z-index:60;
+  width:58px;height:58px;border-radius:50%;
+  background:#25d366;display:flex;align-items:center;justify-content:center;
+  box-shadow:0 12px 30px -8px rgba(37,211,102,.6);
+  transition:transform 160ms var(--ease-out);
+}
+.whatsapp-flotante:active{transform:scale(.95)}
+@media (hover:hover) and (pointer:fine){
+  .whatsapp-flotante:hover{transform:scale(1.08)}
+}
+
+/* ===== Accesibilidad ===== */
+.skip-link{
+  position:absolute;left:-9999px;top:0;z-index:100;
+  background:var(--azul-tinta);color:#fff;padding:12px 22px;border-radius:0 0 12px 0;font-weight:600;
+}
+.skip-link:focus{left:0}
+:focus-visible{outline:3px solid var(--azul);outline-offset:2px;border-radius:6px}
+.franja :focus-visible{outline-color:#fff}
+.btn,.opcion,summary,.menu-btn{touch-action:manipulation}
+.error-msg{display:none;color:#b3261e;font-size:.82rem;margin-top:6px;font-weight:500}
+.campo.con-error input{border-color:#b3261e;background:#fdf3f2}
+.campo.con-error .error-msg{display:block}
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important}
+  .revelar{opacity:1;transform:none}
+}
+
+/* ===== Menú móvil ===== */
+.nav-acciones{display:flex;align-items:center;gap:12px;flex-shrink:0}
+.llamar-btn{
+  display:inline-flex;align-items:center;gap:9px;
+  height:44px;padding:0 18px;border-radius:100px;
+  background:rgba(22,53,127,.08);color:var(--azul);
+  justify-content:center;font-weight:600;font-size:.9rem;
+  transition:transform 160ms var(--ease-out), background 200ms ease;
+}
+.llamar-btn:active{transform:scale(.94);background:rgba(22,53,127,.16)}
+@media (hover:hover) and (pointer:fine){
+  .llamar-btn:hover{background:rgba(22,53,127,.14)}
+}
+.franja-logo{height:26px;width:auto;filter:brightness(0) invert(1);opacity:.92}
+.menu-univista{
+  margin-top:20px;padding-top:18px;border-top:1px solid rgba(255,255,255,.09);
+  display:flex;align-items:center;gap:12px;
+}
+.menu-univista span{
+  font-size:.62rem;letter-spacing:.15em;text-transform:uppercase;
+  color:#8fa1d4;font-weight:600;
+}
+.menu-univista img{height:26px;width:auto;filter:brightness(0) invert(1);opacity:.9}
+.menu-btn{
+  display:none;background:none;border:none;cursor:pointer;padding:10px;
+  color:var(--azul-tinta);border-radius:10px;
+}
+.menu-movil{
+  position:fixed;inset:0;z-index:80;
+  display:flex;flex-direction:column;
+  background:
+    radial-gradient(circle at 94% -8%, rgba(224,33,39,.15), transparent 42%),
+    linear-gradient(168deg, #142e70 0%, var(--azul-tinta) 46%, #050f2e 100%);
+  padding:0 26px 26px;
+  opacity:0;visibility:hidden;transform:translateY(-2%);
+  transition:opacity 250ms var(--ease-out), transform 250ms var(--ease-out), visibility 0s 250ms;
+}
+.menu-movil.abierto{
+  opacity:1;visibility:visible;transform:none;
+  transition:opacity 300ms var(--ease-out), transform 300ms var(--ease-out);
+}
+@media (min-width: 961px){.menu-movil{display:none}}
+.menu-top{display:flex;justify-content:space-between;align-items:center;padding:18px 0 6px}
+.menu-logo-caja{display:flex;flex-direction:column;line-height:1.05}
+.menu-logo{font-family:var(--display);font-weight:700;font-size:1.35rem;color:#fff;letter-spacing:-.02em}
+.menu-logo em{font-style:italic;color:#ff8a8d}
+.menu-by{
+  font-size:.56rem;text-transform:uppercase;letter-spacing:.2em;
+  color:rgba(255,255,255,.85);font-weight:600;margin-top:4px;white-space:nowrap;
+}
+.menu-cerrar{
+  background:rgba(255,255,255,.08);border:none;color:#fff;cursor:pointer;
+  width:44px;height:44px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  transition:transform 160ms var(--ease-out), background 200ms ease;
+}
+.menu-cerrar:active{transform:scale(.92)}
+.menu-enlaces{display:flex;flex-direction:column;margin-top:20px;flex:1;overflow-y:auto}
+.menu-enlaces a{
+  font-family:var(--display);font-size:1.65rem;font-weight:600;color:#fff;
+  padding:15px 0;border-bottom:1px solid rgba(255,255,255,.09);
+  opacity:0;transform:translateY(12px);
+  transition:opacity 350ms var(--ease-out), transform 350ms var(--ease-out);
+}
+.menu-movil.abierto .menu-enlaces a{opacity:1;transform:none}
+.menu-movil.abierto .menu-enlaces a:nth-child(1){transition-delay:60ms}
+.menu-movil.abierto .menu-enlaces a:nth-child(2){transition-delay:110ms}
+.menu-movil.abierto .menu-enlaces a:nth-child(3){transition-delay:160ms}
+.menu-movil.abierto .menu-enlaces a:nth-child(4){transition-delay:210ms}
+.menu-movil.abierto .menu-enlaces a:nth-child(5){transition-delay:260ms}
+.menu-contacto{padding-top:20px}
+.menu-cta{width:100%;justify-content:center;padding:15px 20px;margin-bottom:18px;font-size:.98rem}
+.menu-dir{color:#8fa1d4;font-size:.88rem;margin-bottom:14px;display:flex;align-items:center;gap:8px}
+.menu-botones{display:flex;gap:10px}
+.menu-botones .btn{flex:1;justify-content:center;font-size:.9rem;padding:13px 12px}
+.btn-verde{background:#25d366;color:#fff}
+.btn-verde:active{background:#1fb757}
+
+/* ===== Animaciones de scroll ===== */
+.revelar{opacity:0;transform:translateY(24px);transition:opacity 600ms var(--ease-out), transform 600ms var(--ease-out)}
+.revelar.visto{opacity:1;transform:none}
+.revelar-d1{transition-delay:.1s}
+.revelar-d2{transition-delay:.2s}
+.revelar-d3{transition-delay:.3s}
+
+/* ===== Responsive ===== */
+@media (max-width: 960px){
+  .hero-grid,.cotizador-grid,.bea-grid{grid-template-columns:1fr;gap:44px}
+  .grid-servicios,.contacto-grid{grid-template-columns:1fr 1fr}
+  nav.enlaces{display:none}
+  .menu-btn{display:inline-flex}
+  .llamar-btn{width:44px;padding:0;background:transparent}
+  .llamar-btn .num{display:none}
+  .nav-inner{gap:16px;padding-top:17px;padding-bottom:17px}
+  .btn-header{padding:10px 16px;font-size:.85rem;box-shadow:none}
+  .hero{padding-top:24px}
+  .hero-grid{gap:34px}
+  .hero-foto{order:-1;width:100%;max-width:420px;margin:0 auto}
+  .hero-texto .etiqueta{margin-bottom:18px}
+  .hero-texto p.sub{margin:18px 0 26px}
+  .hero-chips{margin-top:30px}
+  .franja{margin-top:56px}
+  .tarjeta-flotante{left:10px}
+  .sello{right:10px}
+  section{padding:72px 0}
+}
+@media (max-width: 620px){
+  .grid-servicios,.contacto-grid{grid-template-columns:1fr}
+  .servicio{padding:24px 22px}
+  .servicio .icono{width:44px;height:44px;margin-bottom:16px}
+  .servicio h3{font-size:1.22rem}
+  .servicio p{margin-bottom:14px}
+  .form-caja{padding:28px 22px}
+  .franja .contenedor{justify-content:flex-start}
+  .nav .contenedor{padding-left:20px;padding-right:20px}
+  .nav-inner{padding-top:16px;padding-bottom:16px;gap:10px}
+  .hero-chips{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:26px}
+  .chip{flex-direction:column;align-items:flex-start;gap:3px}
+  .chip .num{font-size:1.3rem}
+  .chip small{font-size:.68rem}
+  .logo .nombre{font-size:1.1rem;white-space:nowrap}
+  .logo .by{font-size:.5rem;letter-spacing:.13em;white-space:nowrap}
+  .nav-acciones{gap:6px}
+  .btn-header{padding:9px 14px;font-size:.82rem}
+  .menu-btn{padding:8px}
+  .llamar-btn{width:40px;height:40px}
+
+  /* Compactación móvil */
+  section{padding:52px 0}
+  .encabezado-seccion{margin-bottom:26px}
+  .encabezado-seccion h2{font-size:1.55rem}
+  .encabezado-seccion p{font-size:.95rem;margin-top:10px}
+  .hero-texto .etiqueta{display:none}
+  .hero-texto h1{font-size:2rem}
+  .hero-texto p.sub{font-size:1rem;margin:12px 0 20px}
+  .hero-ctas{gap:10px}
+  .hero-ctas .btn{padding:12px 20px;font-size:.9rem}
+  .franja{padding:20px 0;margin-top:44px}
+  .franja .contenedor{gap:12px}
+  .franja .item{font-size:.85rem}
+  .grid-servicios{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;padding:4px 4px 14px;scrollbar-width:none}
+  .grid-servicios::-webkit-scrollbar{display:none}
+  .servicio{flex:0 0 74%;scroll-snap-align:start}
+  .cotizador-texto h2{font-size:1.55rem}
+  .cotizador-texto p{font-size:.95rem;margin-top:12px}
+  .pasos-lista{gap:10px;margin-top:20px}
+  .form-caja h3{font-size:1.25rem}
+  .cita{font-size:1.05rem;margin:18px 0;padding-left:16px}
+  .bea-texto p.bio{font-size:.95rem}
+  .firma{font-size:1.35rem}
+  .resumen-google{padding:9px 16px;gap:10px}
+  .resumen-google strong{font-size:1.1rem}
+  .resumen-google .estrellas{font-size:.8rem;letter-spacing:1px}
+  .resumen-google small{font-size:.74rem}
+  .testimonios-head{margin-bottom:20px}
+  .testimonio{flex-basis:78%;padding:20px;gap:12px}
+  .testimonio p{font-size:.88rem;display:-webkit-box;-webkit-line-clamp:5;-webkit-box-orient:vertical;overflow:hidden}
+  .testimonio.abierta p{-webkit-line-clamp:unset}
+  summary{padding:16px 18px;font-size:.93rem}
+  details .respuesta{padding:0 18px 16px;font-size:.9rem}
+  .contacto-grid{gap:26px}
+  #contacto{padding:52px 0}
+  .mapa-wrap iframe{height:280px}
+}
+</style>
+</head>
+<body>
+
+<a href="#contenido" class="skip-link">Saltar al contenido</a>
+
+<!-- Navegación -->
+<header class="nav">
+  <div class="contenedor nav-inner">
+    <a href="#" class="logo">
+      <span class="nombre">Bea <em>Insurance</em></span>
+      <span class="by">by Univista Insurance</span>
+    </a>
+    <nav class="enlaces">
+      <a href="#servicios">Seguros</a>
+      <a href="#nosotros">Conoce a Bea</a>
+      <a href="#testimonios">Clientes</a>
+      <a href="#faq">Preguntas</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <div class="nav-acciones">
+      <a href="tel:+13055015017" class="llamar-btn" aria-label="Llamar al (305) 501-5017">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.4 2.1L8.1 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.6 1.9z"/></svg>
+        <span class="num">(305) 501-5017</span>
+      </a>
+      <a href="#cotizar" class="btn btn-rojo btn-header">Cotiza gratis</a>
+      <button class="menu-btn" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu-movil" data-menu>
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+  <nav class="menu-movil" id="menu-movil" aria-label="Menú móvil">
+    <div class="menu-top">
+      <div class="menu-logo-caja">
+        <span class="menu-logo">Bea <em>Insurance</em></span>
+        <span class="menu-by">by Univista Insurance</span>
+      </div>
+      <button class="menu-cerrar" aria-label="Cerrar menú" data-cerrar-menu>
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+    <div class="menu-enlaces">
+      <a href="#servicios">Seguros</a>
+      <a href="#nosotros">Conoce a Bea</a>
+      <a href="#testimonios">Clientes</a>
+      <a href="#faq">Preguntas</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+    <div class="menu-contacto">
+      <a href="#cotizar" class="btn btn-rojo menu-cta">Cotiza gratis en 2 minutos</a>
+      <p class="menu-dir">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21c4-3.5 8-6.8 8-11a8 8 0 1 0-16 0c0 4.2 4 7.5 8 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+        1101 SW 27th Ave, Miami, FL 33135
+      </p>
+      <div class="menu-botones">
+        <a href="tel:+13055015017" class="btn btn-blanco">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.4 2.1L8.1 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.6 1.9z"/></svg>
+          (305) 501-5017
+        </a>
+        <a href="https://wa.me/17863707501" class="btn btn-verde">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.2 1.2-1.7 1.2-.4.1-1 .1-1.6-.1a13 13 0 0 1-5.8-5.1c-.6-1-1-2.2-.9-3.1.1-.6.6-1.4 1.1-1.6.3-.1.6-.1.8 0 .2 0 .5 0 .7.5l.9 2.1c.1.2.1.4 0 .6l-.5.8c-.1.2-.2.4 0 .7.5.8 1.2 1.6 2 2.2.5.4 1 .7 1.5.9.3.2.5.1.7-.1l.8-1c.2-.2.4-.3.7-.2l2 1c.3.1.5.2.6.4v.8z"/></svg>
+          WhatsApp
+        </a>
+      </div>
+      <div class="menu-univista">
+        <span>Franquicia autorizada de</span>
+        <img src="https://www.univistainsurance.com/wp-content/uploads/2023/06/Univista-Insurance-Logo.svg" alt="Univista Insurance" height="26" loading="lazy" onerror="this.parentElement.style.display='none'">
+      </div>
+    </div>
+  </nav>
+
+<main id="contenido">
+
+<!-- Hero -->
+<section class="hero" style="padding-bottom:0">
+  <div class="contenedor hero-grid">
+    <div class="hero-texto">
+      <span class="etiqueta revelar visto">Agencia autorizada Univista</span>
+      <h1 class="revelar visto">Tu seguro, con alguien <em>de confianza.</em></h1>
+      <p class="sub revelar visto revelar-d1">Auto, hogar, comercial, vida y salud. Te atendemos en tu idioma, comparamos entre 20+ aseguradoras y te conseguimos el mejor precio. Ahorra hasta un 40%.</p>
+      <div class="hero-ctas revelar visto revelar-d2">
+        <a href="#cotizar" class="btn btn-rojo">Cotiza gratis en 2 minutos</a>
+        <a href="https://wa.me/17863707501" class="btn btn-borde">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.2 1.2-1.7 1.2-.4.1-1 .1-1.6-.1a13 13 0 0 1-5.8-5.1c-.6-1-1-2.2-.9-3.1.1-.6.6-1.4 1.1-1.6.3-.1.6-.1.8 0 .2 0 .5 0 .7.5l.9 2.1c.1.2.1.4 0 .6l-.5.8c-.1.2-.2.4 0 .7.5.8 1.2 1.6 2 2.2.5.4 1 .7 1.5.9.3.2.5.1.7-.1l.8-1c.2-.2.4-.3.7-.2l2 1c.3.1.5.2.6.4v.8z"/></svg>
+          Escríbenos por WhatsApp
+        </a>
+      </div>
+      <div class="hero-chips revelar visto revelar-d3">
+        <div class="chip"><span class="num">4.9★</span><small>116 reseñas<br>en Google</small></div>
+        <div class="chip"><span class="num">20+</span><small>Aseguradoras<br>que comparamos</small></div>
+        <div class="chip"><span class="num">2 min</span><small>Tiempo promedio<br>de respuesta</small></div>
+      </div>
+    </div>
+    <div class="hero-foto revelar visto revelar-d1">
+      <div class="marco">
+        <img src="images/bea.webp?v=2" alt="Beatriz Robaina, tu agente de seguros de confianza en Miami" width="800" height="1000" fetchpriority="high" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="fallback" style="display:none">
+          <span class="inicial">B</span>
+          <p>Foto de Bea no disponible</p>
+        </div>
+      </div>
+      <div class="tarjeta-flotante">
+        <div>
+          <span class="estrellas">★★★★★</span>
+          <strong>4.9 de 5</strong>
+          <small>116 reseñas en Google</small>
+        </div>
+      </div>
+      <div class="sello"><span>40%</span>de ahorro posible</div>
+    </div>
+  </div>
+
+  <!-- Franja de confianza -->
+  <div class="franja">
+    <div class="contenedor">
+      <div class="item">
+        <img src="https://www.univistainsurance.com/wp-content/uploads/2023/06/Univista-Insurance-Logo.svg" alt="Univista Insurance" class="franja-logo" loading="lazy" onerror="this.style.display='none'">
+        <span>Respaldados por <strong>Univista Insurance</strong>, 200+ oficinas</span>
+      </div>
+      <div class="item">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#ff8a8d" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+        <span>Trabajamos con <strong>Geico, Mercury, Allstate, Aetna, Nationwide</strong> y más</span>
+      </div>
+      <div class="item">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#ff8a8d" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        <span>Atención <strong>el mismo día</strong>, sin esperas</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Servicios -->
+<section id="servicios">
+  <div class="contenedor">
+    <div class="encabezado-seccion revelar">
+      <div class="kicker">Nuestros seguros</div>
+      <h2>Protegemos lo que más <em>te importa</em></h2>
+      <p>Comparamos precios entre más de 20 aseguradoras para que no pagues de más. Tú eliges, nosotros hacemos el papeleo.</p>
+    </div>
+    <div class="grid-servicios">
+      <div class="servicio revelar">
+        <div class="icono">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l1.5-4.5A2 2 0 0 1 8.4 7h7.2a2 2 0 0 1 1.9 1.5L19 13M5 13h14M5 13v5a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-1h8v1a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-5"/></svg>
+        </div>
+        <h3>Seguro de Auto</h3>
+        <p>Cobertura completa o básica, licencia de aquí o extranjera. Te buscamos la tarifa más baja del mercado.</p>
+        <a href="#cotizar" class="mas">Cotizar auto</a>
+      </div>
+      <div class="servicio revelar revelar-d1">
+        <div class="icono">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11l9-8 9 8M5 9.5V20a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1V9.5"/></svg>
+        </div>
+        <h3>Seguro de Hogar</h3>
+        <p>Propietarios, inquilinos, condominios e inundación. Protege tu casa contra huracanes y lo inesperado.</p>
+        <a href="#cotizar" class="mas">Cotizar hogar</a>
+      </div>
+      <div class="servicio destacado revelar revelar-d2">
+        <div class="icono">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21c4-3.5 8-6.8 8-11a8 8 0 1 0-16 0c0 4.2 4 7.5 8 11z"/><path d="M9 10l2 2 4-4"/></svg>
+        </div>
+        <h3>Salud y Obamacare</h3>
+        <p>Planes desde $0 al mes si calificas. Te ayudamos con la inscripción y todo el proceso, gratis.</p>
+        <a href="#cotizar" class="mas">Ver si califico</a>
+      </div>
+      <div class="servicio revelar">
+        <div class="icono">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 9h1m4 0h1M9 13h1m4 0h1M9 17h1m4 0h1"/></svg>
+        </div>
+        <h3>Seguro Comercial</h3>
+        <p>Protege tu negocio: responsabilidad civil, auto comercial, compensación laboral y más.</p>
+        <a href="#cotizar" class="mas">Cotizar negocio</a>
+      </div>
+      <div class="servicio revelar revelar-d1">
+        <div class="icono">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.6-9.5-9A5.5 5.5 0 0 1 12 6.5 5.5 5.5 0 0 1 21.5 12C19 16.4 12 21 12 21z"/></svg>
+        </div>
+        <h3>Seguro de Vida</h3>
+        <p>Protege el futuro de tu familia y construye ahorro. Planes con beneficios en vida y para el retiro.</p>
+        <a href="#cotizar" class="mas">Cotizar vida</a>
+      </div>
+      <div class="servicio revelar revelar-d2">
+        <div class="icono">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M8 12h8M12 8v8"/></svg>
+        </div>
+        <h3>Más coberturas</h3>
+        <p>Medicare, seguro de mascotas, botes y motoras. Si se puede asegurar, te lo cotizamos.</p>
+        <a href="#cotizar" class="mas">Preguntar</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Cotizador -->
+<section id="cotizar">
+  <div class="contenedor cotizador-grid">
+    <div class="cotizador-texto revelar">
+      <h2>Cotiza gratis, <em>sin compromiso</em></h2>
+      <p>Tres pasos sencillos y Bea te contacta con las mejores opciones. Sin letra pequeña, sin presión.</p>
+      <div class="pasos-lista">
+        <div class="paso-item"><span class="n">1</span> Dinos qué quieres asegurar</div>
+        <div class="paso-item"><span class="n">2</span> Cuéntanos un poco de ti</div>
+        <div class="paso-item"><span class="n">3</span> Recibe tu cotización el mismo día</div>
+      </div>
+    </div>
+    <div class="form-caja revelar revelar-d1">
+      <div class="progreso"><span class="activo"></span><span></span><span></span></div>
+
+      <!-- Paso 1 -->
+      <div class="paso visible" data-paso="1">
+        <h3>¿Qué quieres asegurar?</h3>
+        <p class="ayuda">Elige una opción para empezar.</p>
+        <div class="opciones-seguro">
+          <button class="opcion" type="button" data-valor="Auto">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l1.5-4.5A2 2 0 0 1 8.4 7h7.2a2 2 0 0 1 1.9 1.5L19 13M5 13h14M5 13v5a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-1h8v1a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-5"/></svg>
+            Auto
+          </button>
+          <button class="opcion" type="button" data-valor="Hogar">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11l9-8 9 8M5 9.5V20a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1V9.5"/></svg>
+            Hogar
+          </button>
+          <button class="opcion" type="button" data-valor="Salud / Obamacare">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.6-9.5-9A5.5 5.5 0 0 1 12 6.5 5.5 5.5 0 0 1 21.5 12C19 16.4 12 21 12 21z"/></svg>
+            Salud
+          </button>
+          <button class="opcion" type="button" data-valor="Vida">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22V8M12 8a5 5 0 0 1 5-5h3v2a5 5 0 0 1-5 5h-3zM12 12a5 5 0 0 0-5-5H4v1a5 5 0 0 0 5 5h3"/></svg>
+            Vida
+          </button>
+          <button class="opcion" type="button" data-valor="Comercial">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 9h1m4 0h1M9 13h1m4 0h1M9 17h1m4 0h1"/></svg>
+            Negocio
+          </button>
+          <button class="opcion" type="button" data-valor="Otro">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M8 12h8M12 8v8"/></svg>
+            Otro
+          </button>
+        </div>
+      </div>
+
+      <!-- Paso 2 -->
+      <div class="paso" data-paso="2">
+        <h3>Cuéntanos de ti</h3>
+        <p class="ayuda">Solo lo básico, prometido.</p>
+        <div class="campo">
+          <label for="nombre">Tu nombre</label>
+          <input type="text" id="nombre" name="nombre" autocomplete="name" placeholder="María González">
+          <p class="error-msg" role="alert">Escribe tu nombre para continuar.</p>
+        </div>
+        <div class="campo">
+          <label for="zip">Código postal</label>
+          <input type="text" id="zip" name="zip" inputmode="numeric" autocomplete="postal-code" maxlength="5" placeholder="33012">
+          <p class="error-msg" role="alert">Escribe un código postal de 5 dígitos.</p>
+        </div>
+        <div class="form-nav">
+          <button class="btn btn-atras" data-atras>Atrás</button>
+          <button class="btn btn-azul" data-siguiente>Continuar</button>
+        </div>
+      </div>
+
+      <!-- Paso 3 -->
+      <div class="paso" data-paso="3">
+        <h3>¿Cómo te contactamos?</h3>
+        <p class="ayuda">Bea te llama o te escribe hoy mismo.</p>
+        <div class="campo">
+          <label for="telefono">Tu teléfono</label>
+          <input type="tel" id="telefono" name="telefono" autocomplete="tel" placeholder="(305) 000-0000">
+          <p class="error-msg" role="alert">Escribe tu teléfono para poder contactarte.</p>
+        </div>
+        <div class="form-nav">
+          <button class="btn btn-atras" data-atras>Atrás</button>
+          <button class="btn btn-rojo" data-enviar>Recibir mi cotización</button>
+        </div>
+      </div>
+
+      <!-- Éxito -->
+      <div class="paso" data-paso="4">
+        <div class="exito">
+          <div class="check">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#e02127" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+          </div>
+          <h3>¡Listo! Recibimos tu solicitud</h3>
+          <p>Bea te contactará hoy mismo con las mejores opciones para tu seguro de <strong data-resumen></strong>. Si tienes prisa, <a href="https://wa.me/17863707501" style="color:var(--rojo);font-weight:600">escríbenos por WhatsApp</a>.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Conoce a Bea -->
+<section id="nosotros">
+  <div class="contenedor bea-grid">
+    <div class="bea-foto revelar">
+      <img src="images/oficina.webp" alt="Oficina de Univista Insurance en 1101 SW 27th Ave, Miami" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="fallback" style="display:none">
+        <p>Foto de la oficina no disponible</p>
+      </div>
+    </div>
+    <div class="bea-texto revelar revelar-d1">
+      <div class="encabezado-seccion" style="margin-bottom:0">
+        <div class="kicker">Conoce a tu agente</div>
+        <h2>Hola, soy Bea. <em>Mucho gusto.</em></h2>
+      </div>
+      <div class="cita">"Un seguro no es un papel: es la tranquilidad de tu familia. Por eso trato cada póliza como si fuera la mía."</div>
+      <p class="bio">Soy Beatriz Robaina y llevo años ayudando a las familias de Miami a proteger lo que más les importa: su carro, su casa, su salud y su futuro. Como agencia autorizada de Univista Insurance, tengo acceso a más de 20 aseguradoras: Geico, Mercury, Allstate, Aetna, Nationwide y más. Eso significa que trabajo para ti, no para una sola compañía.</p>
+      <p class="bio">Cuando me llamas, hablas conmigo. En tu idioma, sin términos raros y sin prisa. Por eso mis clientes me califican con 4.9 de 5 estrellas. Ven a visitarme en la Calle 8 y la 27 Ave, te espero con un cafecito.</p>
+      <div class="firma">Beatriz "Bea" Robaina<small>Agente autorizada · Univista Insurance · Miami, FL</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonios -->
+<section id="testimonios">
+  <div class="contenedor">
+    <div class="encabezado-seccion revelar" style="margin-bottom:34px">
+      <div class="kicker">Reseñas reales de Google</div>
+      <h2>Familias que ya <em>confían en nosotros</em></h2>
+    </div>
+    <div class="testimonios-head revelar">
+      <div class="resumen-google">
+        <svg class="g-logo" viewBox="0 0 48 48" aria-hidden="true"><path fill="#FFC107" d="M43.6 20.1H42V20H24v8h11.3C33.7 32.7 29.2 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.9 1.2 8 3l5.7-5.7C34.1 6.1 29.3 4 24 4 13 4 4 13 4 24s9 20 20 20 20-9 20-20c0-1.3-.1-2.7-.4-3.9z"/><path fill="#FF3D00" d="M6.3 14.7l6.6 4.8C14.7 15.1 18.9 12 24 12c3.1 0 5.9 1.2 8 3l5.7-5.7C34.1 6.1 29.3 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/><path fill="#4CAF50" d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.2C29.2 35.1 26.7 36 24 36c-5.2 0-9.6-3.3-11.3-8l-6.5 5C9.5 39.6 16.2 44 24 44z"/><path fill="#1976D2" d="M43.6 20.1H42V20H24v8h11.3c-.8 2.2-2.2 4.2-4.1 5.6l6.2 5.2C36.9 39.2 44 34 44 24c0-1.3-.1-2.7-.4-3.9z"/></svg>
+        <div>
+          <strong>4.9</strong> <span class="estrellas">★★★★★</span><br>
+          <small>116 reseñas en Google</small>
+        </div>
+      </div>
+      <div class="slider-controles">
+        <button class="flecha" data-prev aria-label="Reseña anterior">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+        </button>
+        <button class="flecha" data-next aria-label="Siguiente reseña">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+        </button>
+      </div>
+    </div>
+    <div class="slider revelar" data-slider aria-label="Reseñas de clientes en Google">
+      <article class="testimonio">
+        <div class="g-fila">
+          <span class="estrellas">★★★★★</span>
+          <svg class="g-logo" viewBox="0 0 48 48" aria-label="Publicado en Google"><path fill="#FFC107" d="M43.6 20.1H42V20H24v8h11.3C33.7 32.7 29.2 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.9 1.2 8 3l5.7-5.7C34.1 6.1 29.3 4 24 4 13 4 4 13 4 24s9 20 20 20 20-9 20-20c0-1.3-.1-2.7-.4-3.9z"/><path fill="#FF3D00" d="M6.3 14.7l6.6 4.8C14.7 15.1 18.9 12 24 12c3.1 0 5.9 1.2 8 3l5.7-5.7C34.1 6.1 29.3 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/><path fill="#4CAF50" d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.2C29.2 35.1 26.7 36 24 36c-5.2 0-9.6-3.3-11.3-8l-6.5 5C9.5 39.6 16.2 44 24 44z"/><path fill="#1976D2" d="M43.6 20.1H42V20H24v8h11.3c-.8 2.2-2.2 4.2-4.1 5.6l6.2 5.2C36.9 39.2 44 34 44 24c0-1.3-.1-2.7-.4-3.9z"/></svg>
+        </div>
+        <p>"This Univista office has been a great help for my insurance needs. Their dedication to provide the best service for their customers is palpable... Beatriz is a very knowledgeable, dedicated, honest and hard worker. One of those you will want to have working for you. Thank you for all your help all these years."</p>
+        <div class="autor">
+          <span class="avatar">GM</span>
+          <div><strong>Guadalupe Mora</strong><small>Hace 3 meses · Google</small></div>
+        </div>
+      </article>
+      <article class="testimonio">
+        <div class="g-fila">
+          <span class="estrellas">★★★★★</span>
+          <svg class="g-logo" viewBox="0 0 48 48" aria-label="Publicado en Google"><path fill="#FFC107" d="M43.6 20.1H42V20H24v8h11.3C33.7 32.7 29.2 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.9 1.2 8 3l5.7-5.7C34.1 6.1 29.3 4 24 4 13 4 4 13 4 24s9 20 20 20 20-9 20-20c0-1.3-.1-2.7-.4-3.9z"/><path fill="#FF3D00" d="M6.3 14.7l6.6 4.8C14.7 15.1 18.9 12 24 12c3.1 0 5.9 1.2 8 3l5.7-5.7C34.1 6.1 29.3 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/><path fill="#4CAF50" d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.2C29.2 35.1 26.7 36 24 36c-5.2 0-9.6-3.3-11.3-8l-6.5 5C9.5 39.6 16.2 44 24 44z"/><path fill="#1976D2" d="M43.6 20.1H42V20H24v8h11.3c-.8 2.2-2.2 4.2-4.1 5.6l6.2 5.2C36.9 39.2 44 34 44 24c0-1.3-.1-2.7-.4-3.9z"/></svg>
+        </div>
+        <p>Excelente servicio en Univista Insurance. Me atendió la representante, Liannet Albariño y el trato fue muy profesional y eficiente. Escuchó mi situación, me explicó todo claro y en minutos ya tenía soluciones concretas. Resolvió mi caso rápido y sin complicaciones. Súper recomendable.</p>
+        <div class="autor">
+          <span class="avatar av-2">AP</span>
+          <div><strong>Alietys Perez</strong><small>Hace 3 meses · Google</small></div>
+        </div>
+      </article>
+      <article class="testimonio">
+        <div class="g-fila">
+          <span class="estrellas">★★★★★</span>
+          <svg class="g-logo" viewBox="0 0 48 48" aria-label="Publicado en Google"><path fill="#FFC107" d="M43.6 20.1H42V20H24v8h11.3C33.7 32.7 29.2 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.9 1.2 8 3l5.7-5.7C34.1 6.1 29.3 4 24 4 13 4 4 13 4 24s9 20 20 20 20-9 20-20c0-1.3-.1-2.7-.4-3.9z"/><path fill="#FF3D00" d="M6.3 14.7l6.6 4.8C14.7 15.1 18.9 12 24 12c3.1 0 5.9 1.2 8 3l5.7-5.7C34.1 6.1 29.3 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/><path fill="#4CAF50" d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.2C29.2 35.1 26.7 36 24 36c-5.2 0-9.6-3.3-11.3-8l-6.5 5C9.5 39.6 16.2 44 24 44z"/><path fill="#1976D2" d="M43.6 20.1H42V20H24v8h11.3c-.8 2.2-2.2 4.2-4.1 5.6l6.2 5.2C36.9 39.2 44 34 44 24c0-1.3-.1-2.7-.4-3.9z"/></svg>
+        </div>
+        <p>I had a great experience working with Claudia. She was extremely professional, knowledgeable, and responsive throughout the entire process. She took the time to explain everything clearly and made sure I understood all my options. I highly recommend her to anyone looking for a reliable insurance agent.</p>
+        <div class="autor">
+          <span class="avatar av-3">JM</span>
+          <div><strong>Jessie Marrero</strong><small>Hace 5 meses · Google · Local Guide</small></div>
+        </div>
+      </article>
+      <article class="testimonio">
+        <div class="g-fila">
+          <span class="estrellas">★★★★★</span>
+          <svg class="g-logo" viewBox="0 0 48 48" aria-label="Publicado en Google"><path fill="#FFC107" d="M43.6 20.1H42V20H24v8h11.3C33.7 32.7 29.2 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.9 1.2 8 3l5.7-5.7C34.1 6.1 29.3 4 24 4 13 4 4 13 4 24s9 20 20 20 20-9 20-20c0-1.3-.1-2.7-.4-3.9z"/><path fill="#FF3D00" d="M6.3 14.7l6.6 4.8C14.7 15.1 18.9 12 24 12c3.1 0 5.9 1.2 8 3l5.7-5.7C34.1 6.1 29.3 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/><path fill="#4CAF50" d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.2C29.2 35.1 26.7 36 24 36c-5.2 0-9.6-3.3-11.3-8l-6.5 5C9.5 39.6 16.2 44 24 44z"/><path fill="#1976D2" d="M43.6 20.1H42V20H24v8h11.3c-.8 2.2-2.2 4.2-4.1 5.6l6.2 5.2C36.9 39.2 44 34 44 24c0-1.3-.1-2.7-.4-3.9z"/></svg>
+        </div>
+        <p>"Maylin at Univista Insurance is phenomenal! Her expertise, dedication, and friendly approach make her stand out. She patiently explains all options, ensuring you get the best coverage at the best price. She truly cares about her clients and goes the extra mile to help. I highly recommend her and this office for all your insurance needs!"</p>
+        <div class="autor">
+          <span class="avatar av-4">AB</span>
+          <div><strong>Alejandro Barcelo</strong><small>Hace 1 año · Google</small></div>
+        </div>
+      </article>
+      <article class="testimonio">
+        <div class="g-fila">
+          <span class="estrellas">★★★★★</span>
+          <svg class="g-logo" viewBox="0 0 48 48" aria-label="Publicado en Google"><path fill="#FFC107" d="M43.6 20.1H42V20H24v8h11.3C33.7 32.7 29.2 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.9 1.2 8 3l5.7-5.7C34.1 6.1 29.3 4 24 4 13 4 4 13 4 24s9 20 20 20 20-9 20-20c0-1.3-.1-2.7-.4-3.9z"/><path fill="#FF3D00" d="M6.3 14.7l6.6 4.8C14.7 15.1 18.9 12 24 12c3.1 0 5.9 1.2 8 3l5.7-5.7C34.1 6.1 29.3 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/><path fill="#4CAF50" d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.2C29.2 35.1 26.7 36 24 36c-5.2 0-9.6-3.3-11.3-8l-6.5 5C9.5 39.6 16.2 44 24 44z"/><path fill="#1976D2" d="M43.6 20.1H42V20H24v8h11.3c-.8 2.2-2.2 4.2-4.1 5.6l6.2 5.2C36.9 39.2 44 34 44 24c0-1.3-.1-2.7-.4-3.9z"/></svg>
+        </div>
+        <p>Fantastic customer service and spoke both English and Spanish!!! Could not be more satisfied as they explained all my options through and through. Definitely going to be relying on them for a long time.</p>
+        <div class="autor">
+          <span class="avatar av-5">AV</span>
+          <div><strong>Alejandro Valdes</strong><small>Hace 1 año · Google</small></div>
+        </div>
+      </article>
+      <article class="testimonio">
+        <div class="g-fila">
+          <span class="estrellas">★★★★★</span>
+          <svg class="g-logo" viewBox="0 0 48 48" aria-label="Publicado en Google"><path fill="#FFC107" d="M43.6 20.1H42V20H24v8h11.3C33.7 32.7 29.2 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.9 1.2 8 3l5.7-5.7C34.1 6.1 29.3 4 24 4 13 4 4 13 4 24s9 20 20 20 20-9 20-20c0-1.3-.1-2.7-.4-3.9z"/><path fill="#FF3D00" d="M6.3 14.7l6.6 4.8C14.7 15.1 18.9 12 24 12c3.1 0 5.9 1.2 8 3l5.7-5.7C34.1 6.1 29.3 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/><path fill="#4CAF50" d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.2C29.2 35.1 26.7 36 24 36c-5.2 0-9.6-3.3-11.3-8l-6.5 5C9.5 39.6 16.2 44 24 44z"/><path fill="#1976D2" d="M43.6 20.1H42V20H24v8h11.3c-.8 2.2-2.2 4.2-4.1 5.6l6.2 5.2C36.9 39.2 44 34 44 24c0-1.3-.1-2.7-.4-3.9z"/></svg>
+        </div>
+        <p>Great customer service. I was in and out in 30 mins or less. They helped me get the best possible deal on car insurance. The whole office was clean and tidy. Make sure you bring your car title!</p>
+        <div class="autor">
+          <span class="avatar av-6">MG</span>
+          <div><strong>Michael Gonzalez</strong><small>Hace 5 años · Google</small></div>
+        </div>
+      </article>
+    </div>
+    <div class="ver-google-wrap revelar">
+      <a href="https://www.google.com/maps/search/?api=1&query=Univista+Insurance+1101+SW+27th+Ave+Miami+FL+33135" target="_blank" rel="noopener" class="btn btn-borde">
+        Ver más reseñas en Google Maps
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="contenedor">
+    <div class="encabezado-seccion revelar">
+      <div class="kicker">Preguntas frecuentes</div>
+      <h2>Resolvemos tus <em>dudas</em></h2>
+    </div>
+    <div class="faq-lista revelar">
+      <details>
+        <summary>¿Cuánto cuesta la cotización?</summary>
+        <div class="respuesta">Nada. La cotización es 100% gratis y sin compromiso. Comparamos entre más de 20 aseguradoras y te presentamos las mejores opciones. Tú decides.</div>
+      </details>
+      <details>
+        <summary>¿Puedo asegurar mi carro con licencia extranjera?</summary>
+        <div class="respuesta">En muchos casos, sí. Trabajamos con aseguradoras que aceptan licencias internacionales o de otros países. Contáctanos y revisamos tu caso sin costo.</div>
+      </details>
+      <details>
+        <summary>¿Qué es Obamacare y cómo sé si califico?</summary>
+        <div class="respuesta">Obamacare (ACA) es el programa de salud con subsidios del gobierno. Dependiendo de tus ingresos y tu familia, podrías pagar desde $0 al mes. Nosotros verificamos si calificas y hacemos la inscripción por ti, gratis.</div>
+      </details>
+      <details>
+        <summary>Ya tengo seguro, ¿me conviene cambiar?</summary>
+        <div class="respuesta">Vale la pena comparar: la mayoría de nuestros clientes ahorra al cambiarse. Tráenos tu póliza actual y te decimos honestamente si podemos conseguirte algo mejor. Si ya tienes el mejor precio, también te lo diremos.</div>
+      </details>
+      <details>
+        <summary>¿Qué pasa después de que cotizo?</summary>
+        <div class="respuesta">Bea te contacta el mismo día con opciones claras. Si te gusta alguna, hacemos todo el papeleo por ti y sales asegurado, muchas veces ese mismo día.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- Contacto -->
+<section id="contacto">
+  <div class="contenedor">
+    <div class="contacto-grid">
+      <div class="contacto-col">
+        <h4>Visítanos</h4>
+        <p>1101 SW 27th Ave<br>Miami, FL 33135</p>
+      </div>
+      <div class="contacto-col">
+        <h4>Horario</h4>
+        <p>Lunes a Viernes: 9am - 6pm<br>Sábado: 10am - 2pm<br>Domingo: Cerrado</p>
+      </div>
+      <div class="contacto-col">
+        <h4>Contáctanos</h4>
+        <p>
+          <a href="tel:+13055015017">(305) 501-5017</a><br>
+          <a href="https://wa.me/17863707501">WhatsApp</a><br>
+          <a href="mailto:brobaina@univistainsurance.com">brobaina@univistainsurance.com</a>
+        </p>
+      </div>
+    </div>
+    <div style="margin-top:56px;border-radius:20px;overflow:hidden;box-shadow:0 20px 50px -20px rgba(0,0,0,.5)">
+      <iframe src="https://www.google.com/maps?q=Univista+Insurance,+1101+SW+27th+Ave,+Miami,+FL+33135&output=embed" width="100%" height="380" style="border:0;display:block" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa: Bea Insurance, 1101 SW 27th Ave, Miami FL"></iframe>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- Footer -->
+<footer>
+  <div class="contenedor">
+    <span>© 2026 Bea Insurance. Todos los derechos reservados.</span>
+    <span class="aviso">Bea Insurance es una agencia franquiciada operada de forma independiente, autorizada por Univista Insurance. Univista Insurance y su logo son marcas registradas de sus respectivos dueños.</span>
+  </div>
+</footer>
+
+<!-- WhatsApp flotante -->
+<a href="https://wa.me/17863707501" class="whatsapp-flotante" aria-label="Escríbenos por WhatsApp">
+  <svg width="30" height="30" viewBox="0 0 24 24" fill="#fff"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.2 1.2-1.7 1.2-.4.1-1 .1-1.6-.1a13 13 0 0 1-5.8-5.1c-.6-1-1-2.2-.9-3.1.1-.6.6-1.4 1.1-1.6.3-.1.6-.1.8 0 .2 0 .5 0 .7.5l.9 2.1c.1.2.1.4 0 .6l-.5.8c-.1.2-.2.4 0 .7.5.8 1.2 1.6 2 2.2.5.4 1 .7 1.5.9.3.2.5.1.7-.1l.8-1c.2-.2.4-.3.7-.2l2 1c.3.1.5.2.6.4v.8z"/></svg>
+</a>
+
+<script>
+// ============================================================
+// CONFIGURACIÓN GHL (GoHighLevel)
+// 1. En GHL: Automation > Workflows > Create Workflow
+// 2. Trigger: "Inbound Webhook" > copia la URL que te da
+// 3. Pégala aquí abajo entre las comillas:
+const GHL_WEBHOOK_URL = '';
+// ============================================================
+
+function enviarLeadGHL(datos){
+  if(!GHL_WEBHOOK_URL){
+    console.warn('[Bea Insurance] GHL_WEBHOOK_URL sin configurar. Lead capturado:', datos);
+    return Promise.resolve();
+  }
+  return fetch(GHL_WEBHOOK_URL, {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify(datos)
+  }).catch(err => console.error('[Bea Insurance] Error enviando lead a GHL:', err));
+}
+
+// ===== Cotizador multi-paso =====
+(function(){
+  const caja = document.querySelector('.form-caja');
+  const pasos = caja.querySelectorAll('.paso');
+  const barras = caja.querySelectorAll('.progreso span');
+  let seguroElegido = '';
+
+  function irA(n){
+    pasos.forEach(p => p.classList.toggle('visible', p.dataset.paso == n));
+    barras.forEach((b,i) => b.classList.toggle('activo', i < Math.min(n,3)));
+  }
+
+  caja.querySelectorAll('.opcion').forEach(op => {
+    op.addEventListener('click', () => {
+      caja.querySelectorAll('.opcion').forEach(o => o.classList.remove('elegida'));
+      op.classList.add('elegida');
+      seguroElegido = op.dataset.valor;
+      setTimeout(() => irA(2), 250);
+    });
+  });
+
+  caja.querySelectorAll('[data-atras]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const actual = +btn.closest('.paso').dataset.paso;
+      irA(actual - 1);
+    });
+  });
+
+  function marcarError(input, hayError){
+    input.closest('.campo').classList.toggle('con-error', hayError);
+    if(hayError) input.focus();
+    return hayError;
+  }
+
+  // Limpiar el error en cuanto el usuario corrige
+  caja.querySelectorAll('.campo input').forEach(inp => {
+    inp.addEventListener('input', () => inp.closest('.campo').classList.remove('con-error'));
+  });
+
+  caja.querySelector('[data-siguiente]').addEventListener('click', () => {
+    const nombre = document.getElementById('nombre');
+    const zip = document.getElementById('zip');
+    if(marcarError(nombre, !nombre.value.trim())) return;
+    if(marcarError(zip, !/^\d{5}$/.test(zip.value.trim()))) return;
+    irA(3);
+  });
+
+  caja.querySelector('[data-enviar]').addEventListener('click', async (e) => {
+    const tel = document.getElementById('telefono');
+    if(marcarError(tel, tel.value.trim().replace(/\D/g,'').length < 10)) return;
+
+    const btn = e.currentTarget;
+    btn.disabled = true;
+    const textoOriginal = btn.textContent;
+    btn.textContent = 'Enviando...';
+
+    await enviarLeadGHL({
+      nombre: document.getElementById('nombre').value.trim(),
+      telefono: tel.value.trim(),
+      codigo_postal: document.getElementById('zip').value.trim(),
+      tipo_seguro: seguroElegido || 'No especificado',
+      fuente: 'Cotizador web beainsurance',
+      pagina: location.href
+    });
+
+    btn.disabled = false;
+    btn.textContent = textoOriginal;
+    caja.querySelector('[data-resumen]').textContent = seguroElegido || 'seguro';
+    irA(4);
+    barras.forEach(b => b.classList.add('activo'));
+  });
+})();
+
+// ===== Slider de reseñas =====
+(function(){
+  const slider = document.querySelector('[data-slider]');
+  const prev = document.querySelector('[data-prev]');
+  const next = document.querySelector('[data-next]');
+  if(!slider) return;
+
+  function paso(){
+    const card = slider.querySelector('.testimonio');
+    return card ? card.getBoundingClientRect().width + 18 : 300;
+  }
+  function estado(){
+    prev.disabled = slider.scrollLeft < 10;
+    next.disabled = slider.scrollLeft > slider.scrollWidth - slider.clientWidth - 10;
+  }
+  prev.addEventListener('click', () => slider.scrollBy({left: -paso(), behavior: 'smooth'}));
+  next.addEventListener('click', () => slider.scrollBy({left: paso(), behavior: 'smooth'}));
+  slider.addEventListener('scroll', estado, {passive: true});
+  window.addEventListener('resize', estado, {passive: true});
+  estado();
+})();
+
+// ===== "Leer más" en reseñas (solo móvil, solo si el texto quedó recortado) =====
+(function(){
+  if(!matchMedia('(max-width:620px)').matches) return;
+  document.querySelectorAll('.testimonio').forEach(t => {
+    const p = t.querySelector('p');
+    if(p.scrollHeight <= p.clientHeight + 2) return;
+    const btn = document.createElement('button');
+    btn.className = 'leer-mas';
+    btn.style.display = 'inline-block';
+    btn.textContent = 'Leer más';
+    btn.addEventListener('click', () => {
+      const abierta = t.classList.toggle('abierta');
+      btn.textContent = abierta ? 'Leer menos' : 'Leer más';
+    });
+    p.after(btn);
+  });
+})();
+
+// ===== Menú móvil (pantalla completa) =====
+(function(){
+  const btn = document.querySelector('[data-menu]');
+  const cerrar = document.querySelector('[data-cerrar-menu]');
+  const menu = document.getElementById('menu-movil');
+
+  function setMenu(abierto){
+    menu.classList.toggle('abierto', abierto);
+    btn.setAttribute('aria-expanded', abierto);
+    document.body.style.overflow = abierto ? 'hidden' : '';
+    if(abierto) cerrar.focus();
+  }
+
+  btn.addEventListener('click', () => setMenu(!menu.classList.contains('abierto')));
+  cerrar.addEventListener('click', () => setMenu(false));
+  document.addEventListener('keydown', e => {
+    if(e.key === 'Escape' && menu.classList.contains('abierto')) setMenu(false);
+  });
+  menu.querySelectorAll('.menu-enlaces a, .menu-cta').forEach(a => a.addEventListener('click', () => setMenu(false)));
+})();
+
+// ===== Animaciones al hacer scroll =====
+(function(){
+  const observador = new IntersectionObserver(entradas => {
+    entradas.forEach(e => {
+      if(e.isIntersecting){ e.target.classList.add('visto'); observador.unobserve(e.target); }
+    });
+  }, {threshold:.12});
+  document.querySelectorAll('.revelar:not(.visto)').forEach(el => observador.observe(el));
+})();
+</script>
+</body>
+</html>
