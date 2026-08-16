@@ -433,8 +433,19 @@ footer .aviso{max-width:640px;line-height:1.6}
   transition:transform 160ms var(--ease-out);
 }
 .whatsapp-flotante:active{transform:scale(.95)}
+.whatsapp-flotante::before{
+  content:"";position:absolute;inset:0;border-radius:50%;
+  background:#25d366;z-index:-1;opacity:0;
+  animation:pulso-wa 3.8s cubic-bezier(0.16, 1, 0.3, 1) infinite;
+}
+@keyframes pulso-wa{
+  0%{transform:scale(1);opacity:.4}
+  40%{transform:scale(1.55);opacity:0}
+  100%{transform:scale(1.55);opacity:0}
+}
 @media (hover:hover) and (pointer:fine){
   .whatsapp-flotante:hover{transform:scale(1.08)}
+  .whatsapp-flotante:hover::before{animation-play-state:paused;opacity:0}
 }
 
 /* ===== Accesibilidad ===== */
