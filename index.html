@@ -269,6 +269,8 @@ section{padding:96px 0}
 .form-caja{
   background:#fff;border-radius:26px;padding:40px;box-shadow:0 30px 70px -25px rgba(0,0,0,.45);
 }
+iframe.form-ghl{min-height:780px}
+@media (max-width:860px){iframe.form-ghl{min-height:1040px}}
 .progreso{display:flex;gap:8px;margin-bottom:28px}
 .progreso span{height:5px;flex:1;border-radius:10px;background:var(--crema-2);transition:background .3s}
 .progreso span.activo{background:var(--rojo)}
@@ -843,93 +845,32 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="contenedor cotizador-grid">
     <div class="cotizador-texto revelar">
       <h2>Cotiza gratis, <em>sin compromiso</em></h2>
-      <p>Tres pasos sencillos y Bea te contacta con las mejores opciones. Sin letra pequeña, sin presión.</p>
+      <p>Cuéntanos qué quieres asegurar y Bea te contacta hoy mismo con las mejores opciones.</p>
       <div class="pasos-lista">
-        <div class="paso-item"><span class="n">1</span> Dinos qué quieres asegurar</div>
-        <div class="paso-item"><span class="n">2</span> Cuéntanos un poco de ti</div>
-        <div class="paso-item"><span class="n">3</span> Recibe tu cotización el mismo día</div>
+        <div class="paso-item"><span class="n"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg></span> Sin letra pequeña y sin presión</div>
+        <div class="paso-item"><span class="n"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg></span> Te atendemos en tu idioma</div>
+        <div class="paso-item"><span class="n"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg></span> Recibe tu cotización el mismo día</div>
+      
       </div>
     </div>
     <div class="form-caja revelar revelar-d1">
-      <div class="progreso"><span class="activo"></span><span></span><span></span></div>
-
-      <!-- Paso 1 -->
-      <div class="paso visible" data-paso="1">
-        <h3>¿Qué quieres asegurar?</h3>
-        <p class="ayuda">Elige una opción para empezar.</p>
-        <div class="opciones-seguro">
-          <button class="opcion" type="button" data-valor="Auto">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l1.5-4.5A2 2 0 0 1 8.4 7h7.2a2 2 0 0 1 1.9 1.5L19 13M5 13h14M5 13v5a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-1h8v1a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-5"/></svg>
-            Auto
-          </button>
-          <button class="opcion" type="button" data-valor="Hogar">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11l9-8 9 8M5 9.5V20a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1V9.5"/></svg>
-            Hogar
-          </button>
-          <button class="opcion" type="button" data-valor="Salud / Obamacare">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.6-9.5-9A5.5 5.5 0 0 1 12 6.5 5.5 5.5 0 0 1 21.5 12C19 16.4 12 21 12 21z"/></svg>
-            Salud
-          </button>
-          <button class="opcion" type="button" data-valor="Vida">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22V8M12 8a5 5 0 0 1 5-5h3v2a5 5 0 0 1-5 5h-3zM12 12a5 5 0 0 0-5-5H4v1a5 5 0 0 0 5 5h3"/></svg>
-            Vida
-          </button>
-          <button class="opcion" type="button" data-valor="Comercial">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 9h1m4 0h1M9 13h1m4 0h1M9 17h1m4 0h1"/></svg>
-            Negocio
-          </button>
-          <button class="opcion" type="button" data-valor="Otro">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M8 12h8M12 8v8"/></svg>
-            Otro
-          </button>
-        </div>
-      </div>
-
-      <!-- Paso 2 -->
-      <div class="paso" data-paso="2">
-        <h3>Cuéntanos de ti</h3>
-        <p class="ayuda">Solo lo básico, prometido.</p>
-        <div class="campo">
-          <label for="nombre">Tu nombre</label>
-          <input type="text" id="nombre" name="nombre" autocomplete="name" placeholder="María González">
-          <p class="error-msg" role="alert">Escribe tu nombre para continuar.</p>
-        </div>
-        <div class="campo">
-          <label for="zip">Código postal</label>
-          <input type="text" id="zip" name="zip" inputmode="numeric" autocomplete="postal-code" maxlength="5" placeholder="33012">
-          <p class="error-msg" role="alert">Escribe un código postal de 5 dígitos.</p>
-        </div>
-        <div class="form-nav">
-          <button class="btn btn-atras" data-atras>Atrás</button>
-          <button class="btn btn-azul" data-siguiente>Continuar</button>
-        </div>
-      </div>
-
-      <!-- Paso 3 -->
-      <div class="paso" data-paso="3">
-        <h3>¿Cómo te contactamos?</h3>
-        <p class="ayuda">Bea te llama o te escribe hoy mismo.</p>
-        <div class="campo">
-          <label for="telefono">Tu teléfono</label>
-          <input type="tel" id="telefono" name="telefono" autocomplete="tel" placeholder="(305) 000-0000">
-          <p class="error-msg" role="alert">Escribe tu teléfono para poder contactarte.</p>
-        </div>
-        <div class="form-nav">
-          <button class="btn btn-atras" data-atras>Atrás</button>
-          <button class="btn btn-rojo" data-enviar>Recibir mi cotización</button>
-        </div>
-      </div>
-
-      <!-- Éxito -->
-      <div class="paso" data-paso="4">
-        <div class="exito">
-          <div class="check">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#e02127" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
-          </div>
-          <h3>¡Listo! Recibimos tu solicitud</h3>
-          <p>Bea te contactará hoy mismo con las mejores opciones para tu seguro de <strong data-resumen></strong>. Si tienes prisa, <a href="https://wa.me/17863707501" style="color:var(--rojo);font-weight:600">escríbenos por WhatsApp</a>.</p>
-        </div>
-      </div>
+      <!-- Formulario de GoHighLevel: Cotizador Bea Insurance -->
+      <iframe
+        src="https://api.leadconnectorhq.com/widget/form/4bDSidlNdObjbNVrXQCy"
+        style="width:100%;border:none;display:block"
+        class="form-ghl"
+        id="inline-4bDSidlNdObjbNVrXQCy"
+        data-layout="{'id':'INLINE'}"
+        data-trigger-type="alwaysShow"
+        data-activation-type="alwaysActivated"
+        data-deactivation-type="neverDeactivate"
+        data-form-name="Cotizador Bea Insurance"
+        data-height="700"
+        data-layout-iframe-id="inline-4bDSidlNdObjbNVrXQCy"
+        data-form-id="4bDSidlNdObjbNVrXQCy"
+        title="Cotizador Bea Insurance">
+      </iframe>
+      <script src="https://link.msgsndr.com/js/form_embed.js"></script>
     </div>
   </div>
 </section>
@@ -1133,98 +1074,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </a>
 
 <script>
-// ============================================================
-// CONFIGURACIÓN GHL (GoHighLevel)
-// 1. En GHL: Automation > Workflows > Create Workflow
-// 2. Trigger: "Inbound Webhook" > copia la URL que te da
-// 3. Pégala aquí abajo entre las comillas:
-const GHL_WEBHOOK_URL = '';
-// ============================================================
-
-function enviarLeadGHL(datos){
-  if(!GHL_WEBHOOK_URL){
-    console.warn('[Bea Insurance] GHL_WEBHOOK_URL sin configurar. Lead capturado:', datos);
-    return Promise.resolve();
-  }
-  return fetch(GHL_WEBHOOK_URL, {
-    method: 'POST',
-    headers: {'Content-Type': 'application/json'},
-    body: JSON.stringify(datos)
-  }).catch(err => console.error('[Bea Insurance] Error enviando lead a GHL:', err));
-}
-
-// ===== Cotizador multi-paso =====
-(function(){
-  const caja = document.querySelector('.form-caja');
-  const pasos = caja.querySelectorAll('.paso');
-  const barras = caja.querySelectorAll('.progreso span');
-  let seguroElegido = '';
-
-  function irA(n){
-    pasos.forEach(p => p.classList.toggle('visible', p.dataset.paso == n));
-    barras.forEach((b,i) => b.classList.toggle('activo', i < Math.min(n,3)));
-  }
-
-  caja.querySelectorAll('.opcion').forEach(op => {
-    op.addEventListener('click', () => {
-      caja.querySelectorAll('.opcion').forEach(o => o.classList.remove('elegida'));
-      op.classList.add('elegida');
-      seguroElegido = op.dataset.valor;
-      setTimeout(() => irA(2), 250);
-    });
-  });
-
-  caja.querySelectorAll('[data-atras]').forEach(btn => {
-    btn.addEventListener('click', () => {
-      const actual = +btn.closest('.paso').dataset.paso;
-      irA(actual - 1);
-    });
-  });
-
-  function marcarError(input, hayError){
-    input.closest('.campo').classList.toggle('con-error', hayError);
-    if(hayError) input.focus();
-    return hayError;
-  }
-
-  // Limpiar el error en cuanto el usuario corrige
-  caja.querySelectorAll('.campo input').forEach(inp => {
-    inp.addEventListener('input', () => inp.closest('.campo').classList.remove('con-error'));
-  });
-
-  caja.querySelector('[data-siguiente]').addEventListener('click', () => {
-    const nombre = document.getElementById('nombre');
-    const zip = document.getElementById('zip');
-    if(marcarError(nombre, !nombre.value.trim())) return;
-    if(marcarError(zip, !/^\d{5}$/.test(zip.value.trim()))) return;
-    irA(3);
-  });
-
-  caja.querySelector('[data-enviar]').addEventListener('click', async (e) => {
-    const tel = document.getElementById('telefono');
-    if(marcarError(tel, tel.value.trim().replace(/\D/g,'').length < 10)) return;
-
-    const btn = e.currentTarget;
-    btn.disabled = true;
-    const textoOriginal = btn.textContent;
-    btn.textContent = 'Enviando...';
-
-    await enviarLeadGHL({
-      nombre: document.getElementById('nombre').value.trim(),
-      telefono: tel.value.trim(),
-      codigo_postal: document.getElementById('zip').value.trim(),
-      tipo_seguro: seguroElegido || 'No especificado',
-      fuente: 'Cotizador web beainsurance',
-      pagina: location.href
-    });
-
-    btn.disabled = false;
-    btn.textContent = textoOriginal;
-    caja.querySelector('[data-resumen]').textContent = seguroElegido || 'seguro';
-    irA(4);
-    barras.forEach(b => b.classList.add('activo'));
-  });
-})();
+// El cotizador propio se sustituyó por el formulario de GoHighLevel (iframe).
+// Su JavaScript y la variable GHL_WEBHOOK_URL se retiraron: ya no existen esos elementos.
 
 // ===== Slider de reseñas =====
 (function(){
